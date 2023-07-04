@@ -1,0 +1,15 @@
+https://github.com/knappygd/holbertonschool-system_engineering-devops/blob/main/diagrams/secured_and_monitored_web_infrastructure.png
+
+The role of the firewall is to filter out network traffic in and out a machine.
+HTTPS is a secute HTTP protocol, which means that if someone intercepts the traffic, it cannot be read.
+Monitoring serves to check if something is broken or slow. It works by collecting data and analyzing it.
+The monitoring client is configured to collect web server data and
+have an alert triggered if QPS (Queries per second) gets out of control.
+One downside of terminating SSL at the load balancer level is that the traffic between the load balancer
+and the web servers is unencrypted.
+Another drawback of having one master MySQL server accepting writes is that if it goes down, the application cannot write to it anymore.
+Having servers with all the same components (database, web server and application server)
+might be a problem because their consumption will not grow the same way between each of them, so we might want to
+have more database servers than application servers for instance.
+Having servers with all the same components (database, web server and application server)
+might be a problem because when there is maintenance performed on a server for a specific component, it will affect other components that are on it.
