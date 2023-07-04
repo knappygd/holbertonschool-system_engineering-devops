@@ -1,0 +1,10 @@
+https://github.com/knappygd/holbertonschool-system_engineering-devops/blob/main/diagrams/distributed_web_infrastructure.png
+
+The load balancer can be configured as either active-passive or active-active.
+In an active-passive configuration, the balancer recognizes a filed node and redirects traffic to the next available node,
+while in an active-active configuration, the load balancer spreads out the workload's traffic among multiple nodes.
+The load balance still is, however, a SPOF, and none of the servers have firewalls.
+Another downside of this network is the lack of traffic encryption and data monitoring.
+The master-slave replication process enables to replicate or copy data stored in more than one server simultaneously.
+The Master database node can accept reads/writes while the Replica can only accept reads.
+This helps the database administrator to create a live backup of the database all the time in case a server fails.
