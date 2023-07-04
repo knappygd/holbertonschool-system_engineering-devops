@@ -1,1 +1,10 @@
 https://github.com/knappygd/holbertonschool-system_engineering-devops/blob/main/diagrams/simple_web_stack.png
+
+The physical server is generally located in a data center, and it can be physical or virtual. It runs an OS, typically Linux.
+The role of a web server is to serve static content, such as web pages, while the application server is responsible for computing dynamic content.
+The database serves to store application data such as usernames and passwords, for example.
+A DNS server is used to translate the record of a domain name into an IP address.
+In our case, the server is a SPOF, or single point of failure. It means that if it fails, the entire network does too.
+This network is not designed to handle real-time code updates, so any time new code is deployed, the server will be temporarily down.
+In bigger systems that handle greater amounts of traffic, multiple servers work in parallel. In our case, if there is too much traffic incoming, the server won't be able to properly handle it.
+The server is interconnected over the network through the TCP/IP protocol.
