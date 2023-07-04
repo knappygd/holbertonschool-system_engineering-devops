@@ -1,0 +1,3 @@
+https://github.com/knappygd/holbertonschool-system_engineering-devops/blob/main/diagrams/scale.png
+
+The load balancer is configured so that if one fails, the other takes over.
